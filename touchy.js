@@ -310,7 +310,8 @@
 				id: touch.identifier,
 				x: touch.pageX,
 				y: touch.pageY,
-				time: time
+				time: time,
+				originalEvent: touch
 			};
 		});
 	}
@@ -320,7 +321,8 @@
 			id: mouseID,
 			x: mouseEvent.pageX,
 			y: mouseEvent.pageY,
-			time: mouseEvent.timeStamp
+			time: mouseEvent.timeStamp,
+			originalEvent: mouseEvent
 		}];
 	}
 
