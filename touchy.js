@@ -492,6 +492,9 @@
 			var self = this;
 			this._mouseup = function (e) {
 				if (e.type === 'mouseout') {
+					if (self.elem === document)
+						return;
+
 					var elem = e.relatedTarget || e.toElement;
 					while (elem) {
 						if (elem === self.elem) {
